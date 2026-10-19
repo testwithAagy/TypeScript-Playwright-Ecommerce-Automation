@@ -1,0 +1,37 @@
+{
+  "validLogin": {
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "expectedText": "Products"
+  },
+  "invalidPassword": {
+    "username": "standard_user",
+    "password": "wrong_password",
+    "expectedText": "Epic sadface: Username and password do not match any user in this service"
+  },
+  "invalidUsername": {
+    "username": "wrong_username",
+    "password": "secret_sauce",
+    "expectedText": "Epic sadface: Username and password do not match any user in this service"
+  },
+  "invalidCredentials": {
+    "username": "wrong_username",
+    "password": "wrong_password",
+    "expectedText": "Epic sadface: Username and password do not match any user in this service"
+  },
+  "emptyUsername": {
+    "username": "",
+    "password": "secret_sauce",
+    "expectedText": "Epic sadface: Username is required"
+  },
+  "emptyPassword": {
+    "username": "standard_user",
+    "password": "",
+    "expectedText": "Epic sadface: Password is required"
+  },
+  "emptyCredentials": {
+    "username": "",
+    "password": "",
+    "expectedText": "Epic sadface: Username is required"
+  }
+}
